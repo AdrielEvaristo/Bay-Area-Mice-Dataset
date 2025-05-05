@@ -1,0 +1,57 @@
+---
+title: "Mock Analysis of Deer Mice Body Weight"
+author: "Adriel Evaristo"
+date: "2025-05-05"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+set.seed(42)
+```
+
+```{r}
+# Load csv data
+csv_data <- read.csv("mock_body_weight_data.csv")
+head(csv_data)
+```
+
+```{r}
+# Mock Data
+mock_data <- data.frame(
+  mouse_id = 1:80,
+  city = rep(c("San Francisco", "Oakland", "San Jose", "San Rafael"), each = 20),
+  body_weight = c(rnorm(20, mean = 22, sd = 2),
+                  rnorm(20, mean = 21, sd = 2),
+                  rnorm(20, mean = 23, sd = 2.5),
+                  rnorm(20, mean = 20, sd = 1.8))
+)
+
+head(mock_data)
+```
+
+
+```{r}
+# One-way ANOVA
+anova_result_csv <- aov(body_weight ~ city, data = csv_data)
+summary(anova_result_csv)
+
+# Post hoc test
+TukeyHSD(anova_result_csv)
+
+# Plot
+ggplot(csv_data, aes(x = city, y = body_weight, fill = city)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.7) +
+  geom_jitter(width = 0.2, alpha = 0.5) +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    title = "Body Weight of Deer Mice Across Bay Area Cities (CSV Data)",
+    x = "City",
+    y = "Body Weight (grams)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
