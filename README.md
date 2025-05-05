@@ -2,6 +2,8 @@
 
 **Dataset curator:** Adriel Evaristo, Boria Lab at SFSU
 
+**This repository contains the full RMarkdown file (mock_analysis.Rmd), PDF output (mock_analysis.pdf), and the dataset (mock_body_weight_data.csv).**
+
 ## Dataset Summary
 How does urbanization affect populations? Urbanization is reshaping ecosystems globally, influencing species’
 diversity patterns. Urban areas have a higher presence of non-native species and decrease in the abundance
