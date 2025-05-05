@@ -23,6 +23,7 @@ Approach:
 Field sampling in multiple Bay Area cities
 Collect morphological data: body length, tail length, ear length, and weight
 Compare traits between urban populations to detect signs of local adaptation
+
 Rationale:
 Urban environments impose distinct selective pressures (e.g., temperature, habitat structure) that may drive rapid phenotypic evolution.
 
