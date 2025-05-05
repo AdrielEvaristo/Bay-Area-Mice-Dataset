@@ -16,6 +16,16 @@ are affecting the Peromyscus species through urbanization. Using small mammals a
 will determine if urbanization in the Bay Area, which includes San Francisco, San Jose, Oakland, and Marin
 County, is causing evolutionary responses to the Peromyscus maniculatus
 
+## Aim 1 - Phenotypic Differences Among Populations
+Objective: Assess whether urban environments lead to measurable phenotypic variation in deer mouse populations
+
+Approach:
+Field sampling in multiple Bay Area cities
+Collect morphological data: body length, tail length, ear length, and weight
+Compare traits between urban populations to detect signs of local adaptation
+Rationale:
+Urban environments impose distinct selective pressures (e.g., temperature, habitat structure) that may drive rapid phenotypic evolution.
+
 ## Preliminary Results
 Since we don't have full results from our project, I decided to do a hypothetical dataset of how it will look like if we captured mice around different sections of the San Francisco Bay Area.
 
