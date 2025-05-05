@@ -16,6 +16,14 @@ are affecting the Peromyscus species through urbanization. Using small mammals a
 will determine if urbanization in the Bay Area, which includes San Francisco, San Jose, Oakland, and Marin
 County, is causing evolutionary responses to the Peromyscus maniculatus
 
+## Hypothesis 1: Our first hypothesis will revolve around Aim 1. We would take phenotypic traits to measure differences among urban deer mice populations. We can use an example such as body weight:
+
+Example:
+
+Null hypothesis (H₀): There is no significant difference in mean body weight among urban deer mice populations across different Bay Area cities.
+
+Alternate hypothesis (H₁): There is a significant difference in mean body weight among urban deer mice populations across different Bay Area cities.
+
 ## Aim 1 - Phenotypic Differences Among Populations
 Objective: Assess whether urban environments lead to measurable phenotypic variation in deer mouse populations
 
@@ -26,6 +34,9 @@ Compare traits between urban populations to detect signs of local adaptation
 
 Rationale:
 Urban environments impose distinct selective pressures (e.g., temperature, habitat structure) that may drive rapid phenotypic evolution.
+
+## ANOVA:
+To test whether body weight differs among urban deer mice populations, I performed a one-way ANOVA with body weight as the response variable and city as the predictor. This analysis tests whether mean body weight varies significantly across different urban populations. I visualized the data using a boxplot with overlaid raw data points, employing a colorblind-friendly palette to ensure accessibility. Where assumptions of ANOVA were violated, I conducted a Kruskal-Wallis test as a non-parametric alternative, followed by post hoc pairwise comparisons where applicable.
 
 ## Preliminary Results
 Since we don't have full results from our project, I decided to do a hypothetical dataset of how it will look like if we captured mice around different sections of the San Francisco Bay Area.
